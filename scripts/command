@@ -1,0 +1,7 @@
+./bin/EncoderAppStatic -c cfg/encoder_intra_vtm.cfg -c cfg-360Lib/encoder_360_ERP.cfg -c cfg-360Lib/per-sequence/360/360test_Harbor.cfg -c cfg-360Lib/per-sequence/360/360test_Harbor_Viewports.cfg --SphFile=cfg-360Lib/360Lib/sphere_655362.txt --InputFile=/home/otavio/Downloads/videos/Harbor_8192x4096_30fps_8bit_420_erp.yuv --CodingFaceWidth=4096 --CodingFaceHeight=2048 -b Harbor_QP37.bin --QP=37 --FramesToBeEncoded=8
+
+
+python calcula_BD.py arq_original.csv arq_modificado.csv nVideos
+
+scp -r -P 50000 /home/otavio/Videos/VVCSoftware_VTM-VTM-19.0 ofsantos@gacig7.inf.ufpel.edu.br:/home/ofsantos/noHorizontalModes/
+
