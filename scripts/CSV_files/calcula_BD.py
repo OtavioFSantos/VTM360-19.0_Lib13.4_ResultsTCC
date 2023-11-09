@@ -15,7 +15,6 @@ modsLines = open(modsFile).readlines()
 
 # nFiles = 9
 
-
 QP22 = 0
 QP27 = 1
 QP32 = 2
@@ -53,7 +52,7 @@ for i in range(0,nFiles):
 
 
 	Rmod = np.array([mod[QP22][bitrate], mod[QP27][bitrate], mod[QP32][bitrate], mod[QP37][bitrate]])
-	PSNRmod = np.array([mod[QP22][PSNR], mod[QP27][PSNR], mod[QP32][PSNR], mod[QP37][PSNR]])
+	#PSNRmod = np.array([mod[QP22][PSNR], mod[QP27][PSNR], mod[QP32][PSNR], mod[QP37][PSNR]])
 	# SPSNR_NNmod = np.array([mod[QP22][3], mod[QP27][3], mod[QP32][3], mod[QP37][3]])
 	WSPSNRmod = np.array([mod[QP22][WSPSNR], mod[QP27][WSPSNR], mod[QP32][WSPSNR], mod[QP37][WSPSNR]])
 	# # C_SPSNR_NNmod = np.array([mod[QP22][3], mod[QP27][3], mod[QP32][3], mod[QP37][3]])
@@ -72,8 +71,8 @@ for i in range(0,nFiles):
 	# print(PSNRmod)
 	# print(WSPSNRmod)
 
-	# print 'BD-PSNR: ', BD_PSNR(Rref, PSNRref, Rmod, PSNRmod)
-	# print 'BD-RATE: ', BD_RATE(Rref, PSNRref, Rmod, PSNRmod)
+	#print('BD-PSNR: ', BD_PSNR(Rref, PSNRref, Rmod, PSNRmod))
+	#print('BD-RATE: ', BD_RATE(Rref, PSNRref, Rmod, PSNRmod))
 
 	# print 'BD-SPSNR_NN: ', BD_PSNR(Rref, SPSNR_NNref, Rmod, SPSNR_NNmod)
 	# print 'BD-RATE: ', BD_RATE(Rref, SPSNR_NNref, Rmod, SPSNR_NNmod)
